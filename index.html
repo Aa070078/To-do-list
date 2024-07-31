@@ -1,0 +1,34 @@
+<!DOCTYPE>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ahmed's To Do list</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+    <div class="container">
+        <div class="header">
+            <h3>Ahmed's To Do List</h3>
+            <img src="images/icon.png" alt="icon" class="image-head" />
+        </div>
+        <div class="input-div">
+            <input type="text" id="input" placeholder="Enter task...">
+            <button id="add-btn" onclick="addTask()">Add Task</button>
+            <div id="search-container">
+                <button id="search-image" onclick="toggleSearch()">
+                    <img src="images/loupe (1).png" alt="search" class="imag">
+                </button>
+                <input type="text" id="search-input" placeholder="Search tasks..." style="display: none;" onkeyup="searchTasks()">
+                <button id="close-search" onclick="closeSearch()" style="display: none;">&times;</button>
+            </div>
+        </div>
+        <div id="tasks-container">
+            <ul class="Tasks-list" id="Tasks-list">
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    </body>
+</html>
