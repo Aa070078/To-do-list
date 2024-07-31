@@ -53,6 +53,7 @@ h3 {
     z-index: 1;
 }
 
+
 input {
     flex: 1;
     border: none;
@@ -139,6 +140,19 @@ input {
     padding: 0 10px;
 }
 
+.edit-input-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 15px;
+}
+
+.completed-task {
+    text-decoration: line-through;
+    color: gray;
+}
 
 .edit-input {
     flex: 1;
@@ -160,12 +174,11 @@ input {
     cursor: pointer;
     border-radius: 40px;
     transition: background-color 0.3s ease;
-    }
+}
 
 #edit-btn:hover {
     background-color: #f76959;
 }
-
 .Tasks-list {
     list-style: none;
     padding: 0;
